@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Nearby Restaurant - Zomato</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #ff5a5f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+.restaurant-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 20px;
+    background-color: #ff5a5f;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #e0484f;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #ff5a5f;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+</style>
+<body>
+    <header>
+        <h1>Add Nearby Restaurant</h1>
+        <p>Help us improve our listings by adding your favorite nearby restaurant.</p>
+    </header>
+    
+    <section class="restaurant-form">
+        <h2>Restaurant Details</h2>
+        <form action="submit_restaurant.php" method="POST">
+            <label for="restaurant-name">Restaurant Name:</label>
+            <input type="text" id="restaurant-name" name="restaurant_name" required>
+            
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+            
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+            
+            <label for="cuisine">Cuisine Type:</label>
+            <input type="text" id="cuisine" name="cuisine" required>
+            
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" required>
+            
+            <label for="website">Website (if available):</label>
+            <input type="url" id="website" name="website">
+            
+            <label for="image">Upload Restaurant Image:</label>
+            <input type="file" id="image" name="image">
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Zomato. All rights reserved.</p>
+        <a href="index.html">Back to Home</a>
+    </footer>
+</body>
+</html>
