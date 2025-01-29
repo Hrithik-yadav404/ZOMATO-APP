@@ -35,6 +35,9 @@ header ul li a {
     color: white;
     font-weight: bold;
 }
+header ul li a:hover{
+    color: black;
+}
 
 /* Main Section */
 main {
@@ -65,6 +68,8 @@ main input {
     border: none;
     border-radius: 5px;
     margin-top: 15px;
+    
+    outline: none;
 }
 
 /* Food Delivery Info Section */
